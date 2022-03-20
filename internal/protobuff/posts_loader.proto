@@ -1,0 +1,16 @@
+syntax = "proto3";
+package posts.loader;
+option go_package = "posts.loader.v1";
+
+message LoadPostsRequest {
+  int64 page_number = 1;
+}
+
+message LoadPostsResponse {
+  bool success = 1;
+  int64 loaded_posts_count = 2;
+}
+
+service PostsLoaderService {
+  rpc LoadPosts(LoadPostsRequest) returns (LoadPostsResponse) {};
+}

@@ -9,8 +9,8 @@ import (
 	"log"
 	"net"
 	"net/http"
-	"postsloading/pkg/db"
-	"postsloading/pkg/handlers"
+	"posts.loader/pkg/db"
+	"posts.loader/pkg/handlers"
 )
 
 const (

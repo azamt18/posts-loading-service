@@ -1,4 +1,4 @@
-module postsloading
+module posts.loader
 
 go 1.17
 
